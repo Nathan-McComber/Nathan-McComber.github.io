@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link Fustat Typeface-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+
+    <!--Link CSS Files-->
+    <link href="styles/styles.css" rel="stylesheet">
+
+    <title>Nathan McComber Portfolio - Level Editor Redesign</title>
+
+    <!--Link scripts-->
+    <script src="scripts/hamburger.js"></script>
+</head>
+<body>
+    <!--Nav-->
+    <header>
+        <nav id="top-nav">
+            <a class="nav-text" href="index.html">home</a>
+            <a class="nav-text" href="about.html">about</a>
+            <a class="nav-text mobile-hide" href="schedule_app.html">scheduling app</a>
+            <a class="nav-text mobile-hide" href="travel_site.html">travel website</a>
+            <a class="nav-text-current mobile-hide" href="level_editor.html">game level editor</a>
+            <a class="nav-img" href="mailto:nathanzmcc@gmail.com"><img class="nav-img" src="imgs/envelope.svg" alt="Email me"></a>
+            <a href="https://www.linkedin.com/in/nathan-mccomber-5818692a3"><img class="nav-img" src="imgs/linkedin_logo.jpg" alt="Hyperlink to my LinkedIn account"></a>
+            <button id="hamburger-btn" class="mobile-show" onclick="toggleMenu()">
+                <img id="hamburger-img" src="imgs/hamburger_bars.svg" alt="Hamburger menu button">
+            </button>
+        </nav>
+    </header>
+
+    <!--Hamburger menu, not in header or main-->
+    <div id="hamburger-menu">
+            <a class="nav-text" href="schedule_app.html">scheduling app</a>
+            <a class="nav-text" href="travel_site.html">travel website</a>
+            <a class="nav-text-current" href="level_editor.html">game level editor</a>
+    </div>
+
+    <main>
+
+        <!--Main/Intro Section-->
+        <section>
+            <img class="big-img" src="imgs/editor_thumbnail.png" alt="A level editor for a puzzle game">
+            <h1>Redesigning a Puzzle Game Level Editor</h1>
+            <p>
+                As a freshman, I took a class about programming for game development. 
+                Me and 3 other students in the class were tasked with making a finished game in just one semester.  
+                We developed a puzzle game, and I created a level editor for our level designer using Windows Forms tools in 
+                Visual Studio. However, I pivoted from game development to UX design after freshman year and have learned a lot 
+                more about user interface design.  As a result, I wanted to redesign the level editor as a personal project. 
+            </p>
+
+            <!--Contents + Goal-->
+            <div class="flexbox-2x">
+                <div class="text-card">
+                    <h2>Contents</h2>
+                    <ol>
+                        <li><a href="#context">Context for Game and Level Editor</a></li>
+                        <li><a href="#pros-cons">Assess Pros/Cons of Initial Design</a></li>
+                        <li><a href="#sketch">Brainstorm/Sketch New Solutions</a></li>
+                        <li><a href="#mockup">Mockup the New Design</a></li>
+                    </ol>
+                </div>
+
+                <div class="text-card">
+                    <h2>Primary Goal</h2>
+                    <p>
+                        Design a new level editor by applying what I learned about UI design to the original one.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Context for game and lvl editor-->
+        <section>
+            <h2 id="context">Context for Game and Level Editor</h2>
+            <p>
+                The game we developed is titled <span class="italics">Topping Tumble</span>. It's a puzzle game where players place blocks, 
+                springs, and other items to guide pizza toppings from a fridge to an oven.
+                Players have a limited amount of currency to spend on items for each level, 
+                and not every item can be used in every level.
+            </p>
+
+            <p>
+                The game can be downloaded <a href="https://jeremykdev.itch.io/topping-tumble">here</a>.
+            </p>
+
+            <figure>
+                <img src="imgs/gameplay.png" alt="3 toppings run along a player made bridge in Topping Tumble">
+                <figcaption>An early level from the beginning of the game - the pink blocks were placed by a player.</figcaption>
+            </figure>
+    
+            <p>
+                The editor I made aimed to make the level designer's job easier by providing a graphical 
+               representation of the level they're working on. It has the following features:
+            </p>
+            
+            <ul>
+                <li>Adding/Removing Level Elements (walls, knives, buttons)</li>
+                <li>Modifying the amount of currency the player has</li>
+                <li>Modifying the number of toppings that come from the fridge</li>
+                <li>Specifying which items can be placed by the player</li>
+                <li>Saving a level to import into the game</li>
+                <li>Loading a level to modify it</li>
+            </ul>
+
+            <div class="img-card">
+                <h3>Editor Overview</h3>
+                <img src="imgs/editor_overview.png" alt="A general overview of the level editor">
+            </div>
+        </section>
+
+        <!--Assess Pros/Cons of initial design-->
+        <section>
+            <h2 id="pros-cons">Assess Pros/Cons of the Initial Design</h2>
+            <p>
+                To assess the pros and cons of my initial design, I stepped through the workflow
+                of making a level while using the editor. I then applied Nielsen Norman's 10 Usability Heuristics to the 
+                experience that I had making the level.
+            </p>
+
+            <div class="img-card">
+                <h3>Pros</h3>
+                <img src="imgs/editor_pros.png" alt="A diagram showcasing positive aspects of the initial level editor design">
+            </div>
+
+            <div class="img-card">
+                <h3>Cons</h3>
+                <img src="imgs/editor_cons.png" alt="A diagram showcasing negative aspects of the initial level editor design">
+            </div>
+        </section>
+
+        <!--Brainstorm/Sketch-->
+        <section>
+            <h2 id="sketch">Brainstorm/Sketch New Solutions</h2>
+            <p>
+                Before jumping straight into making a digital mockup for the level editor, I spent some time sketching 
+                out ideas on paper. I usually start with sketching because it allows me to try out multiple ideas without 
+                committing to one. The lack of commitment encourages me to explore more solutions and usually results in a 
+                better design overall.   
+            </p>
+
+            <div class="flexbox-3x">
+                <img src="imgs/editor_sketches_2_cropped.JPEG" class="gallery-img" alt="Sketches exploring ways to display the properties of a tile">
+                <img src="imgs/editor_sketches_3_cropped.JPEG" class="gallery-img" alt="Sketches exploring ways to display level properties">
+                <img src="imgs/editor_sketches_1_cropped.JPEG" class="gallery-img" alt="Sketches exploring the general editor layout and possible error messages">
+            </div>
+        </section>
+
+        <!--Mockup new design-->
+        <section>
+            <h2 id="mockup">Mockup the New Design</h2>
+            <p>
+                I took the sketches that I made and refined them into a “final” Level Editor by using the Windows Forms
+                tools in Visual Studio. While I would normally use a tool like Figma to make a design mockup, I decided 
+                to use Visual Studio's Windows Forms tools to keep within the constraints of the original project. 
+            </p>
+
+            <div class="img-card">
+                <h3>Redesigned Editor</h3>
+                <img src="imgs/revised_lvl_editor.png" alt="Mockup of the redesigned level editor">
+            </div>
+
+            <!--
+                <p>
+                    There were several changes that I made to the original level editor in my redesign. The major 
+                    changes and the Nielsen Norman Heuristics that benefit from them are shown below:
+                </p>
+            -->
+            
+            <div class="img-card">
+                <h3>Major Changes</h3>
+                <img src="imgs/revised_editor_changes.png" alt="A diagram of the major changes I made to the level editor">
+            </div>
+        </section>
+
+        <!--Reflections-->
+        <section>
+            <h2>Project Reflections</h2>
+            <p>
+                The new level editor fixes several issues that the original design had. It shows users all of the actions
+                they can perform on one screen and makes the outcome of those actions obvious. It also provides hints with
+                tooltips and prevents mistakes with warning dialogs.
+            </p>
+            
+            <p>Redesigning the old level editor helped me understand that:</p>
+
+            <div class="flexbox-2x">
+                <div class="text-card">
+                    <em>Designs can always be improved.</em>
+                    <p>
+                        When I initially designed the level editor, I thought that it was good enough. 
+                        However, I found that many things needed to be changed after I assessed it for flaws. 
+                        This highlights the importance of reviewing designs, since the first iteration will almost always 
+                        have room for improvement.
+                    </p>
+                </div>
+
+                <div class="text-card">
+                    <em>Inputs should be obvious and have a clear purpose.</em>
+                    <p>
+                        In my initial design for the level editor, users had to click on an icon of a tile to change 
+                        its properties. It did not look like the icon was a button, and even if it was, the outcome of 
+                        clicking on the button would be unclear. This was a major usability issue and was one of the main 
+                        things I needed to change in my redesign.
+                    </p>
+                </div>
+
+                <div class="text-card">
+                    <em>Workflow steps should be kept in mind while designing.</em>
+                    <p>
+                        I worked through the process of making a level to find problems in my initial editor design. 
+                        If I had thought about the steps of making a level when I was originally designing the editor, 
+                        I could have avoided some of the flaws I made in its design.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <a id="to-top" href="#top-nav">Back to Top</a>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>Nathan McComber - 2025</p>
+
+        <div id="footer-contact">
+            <p>Contact:</p>
+            <a class="nav-img" href="mailto:nathanzmcc@gmail.com">
+                <img class="nav-img" src="imgs/envelope.svg" alt="Email me">
+            </a>
+            <a href="https://www.linkedin.com/in/nathan-mccomber-5818692a3">
+                <img class="nav-img" src="imgs/linkedin_logo.jpg" alt="Hyperlink to my LinkedIn account">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

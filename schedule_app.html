@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link Fustat Typeface-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+
+    <!--Link CSS Files-->
+    <link href="styles/styles.css" rel="stylesheet">
+
+    <title>Nathan McComber Portfolio - Scheduling App</title>
+
+    <!--Link scripts-->
+    <script src="scripts/hamburger.js"></script>
+</head>
+<body>
+    <!--Nav-->
+    <header>
+        <nav id="top-nav">
+            <a class="nav-text" href="index.html">home</a>
+            <a class="nav-text" href="about.html">about</a>
+            <a class="nav-text-current mobile-hide" href="schedule_app.html">scheduling app</a>
+            <a class="nav-text mobile-hide" href="travel_site.html">travel website</a>
+            <a class="nav-text mobile-hide" href="level_editor.html">game level editor</a>
+            <a class="nav-img" href="mailto:nathanzmcc@gmail.com"><img class="nav-img" src="imgs/envelope.svg" alt="Email me"></a>
+            <a href="https://www.linkedin.com/in/nathan-mccomber-5818692a3"><img class="nav-img" src="imgs/linkedin_logo.jpg" alt="Hyperlink to my LinkedIn account"></a>
+            <button id="hamburger-btn" class="mobile-show" onclick="toggleMenu()">
+                <img id="hamburger-img" src="imgs/hamburger_bars.svg" alt="Hamburger menu button">
+            </button>
+        </nav>
+    </header>
+
+    <!--Hamburger menu, not in header or main-->
+    <div id="hamburger-menu">
+            <a class="nav-text-current" href="schedule_app.html">scheduling app</a>
+            <a class="nav-text" href="travel_site.html">travel website</a>
+            <a class="nav-text" href="level_editor.html">game level editor</a>
+    </div>
+
+    <main>
+        <section>
+            <img class="big-img" src="imgs/schedule_app_thumbnail_blurred.JPEG" alt="Someone using the scheduling app prototype on their phone.">
+            <h1>Helping New College Students Manage their Busy Lives</h1>
+            <p>
+                New college students face heavy workloads and high levels of responsibility while needing to adapt to a new 
+                environment. Many universities offer services that aim to streamline the process of adapting to a new campus, 
+                but new students still face significant struggles. Me and two other students were tasked with designing a prototype 
+                for an app or service that lessened these struggles. 
+            </p>
+
+            <div class="flexbox-2x">
+                <div class="text-card">
+                    <h2>Contents</h2>
+
+                    <ol>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#sys-goals">Define System Goals</a></li>
+                        <li><a href="#user-models">Create User Models</a></li>
+                        <li><a href="#lofi">Lo-fi Prototyping and Assessment</a></li>
+                        <li><a href="#hifi">Hi-fi Prototyping and Assessment</a></li>
+                    </ol>
+                </div>
+
+                <div class="text-card">
+                    <h2>Primary Goal</h2>
+                    <p>Ease the process of adapting to a college campus for new college students.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Research-->
+        <section>
+            <h2 id="research">Research</h2>
+            <p>
+                My group and I wanted to reach as many students as we could in a short amount of time, so we decided on using a form to collect data on users. The form was split into the following 5 sections:
+            </p>
+
+            <div class="flexbox-3x">
+                <div class="text-card">
+                    <h3>Demographics</h3>
+                    <p>Collected basic information such as the user's college and what year they were in.</p>
+                </div>
+
+                <div class="text-card">
+                    <h3>Social Life</h3>
+                    <p>Assessed how the user made/found friends and if there were any difficulties in that process.</p>
+                </div>
+
+                <div class="text-card">
+                    <h3>Academics</h3>
+                    <p>Assessed what students found difficult about academic work and how satisfied they were with it.</p>
+                </div>
+
+                <div class="text-card">
+                    <h3>Responsibilities</h3>
+                    <p>Assessed how users dealt with managing their basic life needs (eating 3 meals a day, managing finances, etc.).</p>
+                </div>
+
+                <div class="text-card">
+                    <h3>General Difficulties</h3>
+                    <p>Aimed to find what was the MOST problematic thing for students arriving to a new campus and found issues not assessed in prior sections.</p>
+                </div>
+            </div>
+
+            <p>The form had a total of 14 questions which we came up with as a group. Some specific questions that I contributed were:</p>
+            <ul>
+                <li>How satisfied were you with your major freshman year? (1-5)</li>
+                <li>How many days a week did you eat all 3 meals?</li>
+                <li>How did you find your first year roommate?</li>
+            </ul>
+
+            <p>
+                The form was distributed to Rochester Institute of Technology students via SnapChat, Discord, and Reddit. 
+                We waited roughly 1 week after distributing the form to analyze the results.
+            </p>
+
+            <p><strong>50 students</strong> responded to the form we distributed. Some key statistics we obtained from the results were: </p>
+
+            <div class="flexbox-3x">
+                <div class="text-card">
+                    <em>78% of students struggled with “General Stress.”</em>
+                    <p>“Academic workload/difficult classes”, “Keeping a Consistent Schedule”, and “Being Responsible for Yourself” were the biggest contributors to “General Stress.”</p>
+                </div>
+
+                <div class="text-card">
+                    <em>90% of students failed to have 3 meals every day.</em>
+                </div>
+
+                <div class="text-card">
+                    <em>Only 12% of students cited “Difficult Content” as the hardest part of academics.</em>
+                    <p>“Overload of Work” and “Finding time to study/complete work” were considered the hardest parts of academics.</p>
+                </div>
+            </div>
+
+            <p>
+                We concluded that <strong>keeping track of classes, assignments, meetings, and responsibilities</strong> was the <strong>biggest struggle</strong> for new college students.
+            </p>
+        </section>
+
+        <!--System Goals-->
+        <section>
+            <h2 id="sys-goals">Defining System Goals</h2>
+            <p>
+                The main thing we wanted to do was <strong>help students improve their time management</strong>. 
+                We sought to accomplish this with 2 system goals:
+            </p>
+
+            <div class="flexbox-2x">
+                <div class="text-card">
+                    <em>1. Reduce the number of events and tasks that users need to keep track of</em>
+                    <p>Use reminders to allow the system to hold onto information instead of forcing the user to remember things (recognition vs. recall).</p>
+                </div>
+
+                <div class="text-card">
+                    <em>2. Make schedule creation less overwhelming</em>
+                    <p>Offer suggestions for mealtimes and chores so that users don't have to think of times on their own. Additionally, connect with MyCourses, a service for classes used by the Rochester Institute of Technology, so that users don't have to specify when their classes are.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--User Models-->
+        <section>
+            <h2 id="user-models">Creating User Models</h2>
+            <p>
+                Before diving into prototyping, my group and I created user models to guide our design decisions. We began 
+                by <strong>making 4 user profiles</strong> to specify generic “types” of users. For each profile, we indicated what the user's 
+                <strong>behaviors, goals, and frustrations</strong> were.
+            </p>
+
+            <p>Here's an example of a user profile that I proposed:</p>
+
+            <div class="text-card user-model">
+                <h3>Dissatisfied Freshman</h3>
+
+                <h4>Behaviors</h4>
+                <ul>
+                    <li>Unmotivated to complete their work</li>
+                    <li>Spends most of their day alone</li>
+                    <li>Lots of time spent stressed about changing to a new major</li>
+                </ul>
+
+                <h4>Goals</h4>
+                <ul>
+                    <li>Get through the semester while in a major they don't like</li>
+                    <li>Find friends with common interests</li>
+                    <li>Transition to a new major</li>
+                </ul>
+
+                <h4>Frustrations</h4>
+                <ul>
+                    <li>Doesn't like any of the work they have to do for class</li>
+                    <li>Feels that they don't have time to make friends</li>
+                    <li>Feels that campus resources for mental health and academic planning are rarely available</li>
+                </ul>
+            </div>
+
+            <p>
+                Based on our user profiles, we created <strong>4 personas</strong> (1 for each profile) to define specific users that would 
+                be interacting with our app. We also described the scenario in which each user would be using our app in.
+            </p>
+
+            <p>I created personas and scenarios for the “Dissatisfied Freshman” and “Passionate Scholar” profiles:</p>
+
+            <img src="imgs/steve_wilson.png" alt="Persona for a student named Steve Wilson">
+            <img src="imgs/taya_williams.png" alt="Persona for a student named Taya Williams">
+        </section>
+
+        <!--Lo fi-->
+        <section>
+            <h2 id="lofi">Lo-fi Prototyping and Assessment</h2>
+
+            <p>We used our system goals and user models to determine the actions that our users could perform on our app. We settled on the following actions:</p>
+            <ul>
+                <li>Entering a Consistent/Permanent Schedule (classes, jobs, regular mealtimes, etc.)</li>
+                <li>Viewing the Schedule</li>
+                <li>Adding new Tasks and Events to the Schedule</li> 
+                <li>Finding On-Campus Events (event details are provided and events can be added to the schedule)</li>
+                <li>Finding University Help Resources</li>
+                <li>Controlling Reminders via Settings (allow users to control the frequency, type, and “assertiveness” of reminders)</li>
+            </ul>
+
+            <p>I was tasked with designing a lo-fi prototype for “Entering a Consistent/Permanent Schedule” and “Adding new Tasks and Events to the Schedule.” I began by sketching out ideas on paper and then transitioned to Figma to solidify my ideas.</p>
+
+            <div>
+                <h3>"Entering a Consistent/Permanent Schedule" Prototypes</h3>
+
+                <div class="flexbox-2x">
+                    <div class="img-card">
+                        <h4>Primary Design Sketches</h4>
+                        <img src="imgs/enter_schedule_sketch_1.JPEG">
+                        <img src="imgs/enter_schedule_sketch_2.JPEG">
+                    </div>
+
+                    <div class="img-card">
+                        <h4>Alternative Design Sketches</h4>
+                        <img src="imgs/enter_schedule_alt_sketch_1.JPEG">
+                        <img src="imgs/enter_schedule_alt_sketch_2.JPEG">
+                    </div>
+                </div>  
+
+                <br>
+
+                <div class="img-card">
+                    <h4>Digital Primary Design</h4>
+                    <img src="imgs/enter_schedule_digital.svg">
+                </div>
+
+                <br>
+
+                <div class="img-card">
+                    <h4>Digital Alternative Design</h4>
+                    <img src="imgs/enter_schedule_digital_alt.svg">
+                </div>
+            </div>
+
+            <div>
+                <h3>"Adding new Tasks and Events to the Schedule" Prototypes</h3>
+
+                <div class="img-card">
+                    <h4>Primary Design Sketch</h4>
+                    <img src="imgs/add_event_sketch.JPEG">
+                </div>
+
+                <div class="img-card">
+                    <h4>Digital Primary Design</h4>
+                    <img src="imgs/add_event_digital.svg">
+                </div>
+            </div>
+
+            <h3>Assessing the Lo-fi Prototypes</h3>
+            <p>
+                Before moving into Hi-Fi Prototyping, my group and I decided to evaluate our Lo-Fi Designs for issues. We used 
+                Jakob Nielson's 10 Usability Heuristics to assess our design. We assessed visibility of system status, 
+                match between system and real world, user control and freedom, and help and documentation as a group and 
+                divided the rest of the heuristics amongst ourselves (I assessed the heuristics of <strong>aesthetic and minimalist 
+                design</strong> and <strong>help users recognize, diagnose, and recover from errors</strong>). 
+            </p>
+
+            <p>Our most severe heuristic violations were:</p>
+
+            <div class="flexbox-2x">
+                <div class="text-card">
+                    <h3>User Control and Freedom</h3>
+                    <p>There was no defined way to delete an event or task that was added to the schedule.</p>
+
+                    <h4>Proposed Solutions:</h4>
+                    <ul>
+                        <li>Add “minus” buttons to events that allow users to delete them. The “minus” buttons should open a confirmation dialogue or be toggled on and off via a “Remove Events” button to prevent accidental removal.</li>
+                        <li>Allow users to edit an events details by clicking on it, the event can then be deleted from the “edit” screen.</li>
+                    </ul>
+                </div>
+
+                <div class="text-card">
+                    <h3>Help Users Recognize, Diagnose, and Recover from Errors</h3>
+                    <p>There were no error messages for attempting to add an event or task without filling in the necessary information. Additionally, there was no message telling users that an event conflicted with another event in their schedule.</p>
+
+                    <h4>Proposed Solutions:</h4>
+                    <ul>
+                        <li>Provide a message that states what information is missing when a user tries to add an event or task. Alternatively, only enable the add button once the required information is entered.</li>
+                        <li>Give a message stating that an event the user is trying to add is conflicting with another event in their schedule. Allow them to “Cancel”, “Replace Event”, or “Add Anyway” (overload schedule). If they click “Add Anway”, provide a confirmation dialogue informing the user that this action will result in overlapping events.</li> 
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--Hi fi-->
+        <section>
+            <h2>Hi-fi Prototyping and Assessment</h2>
+            <p>
+                The assignment indicated that the Hi-Fi Prototype should only explore 2 - 3 key features of the app. 
+                As a result, my group and I decided to focus our efforts on <strong>Viewing the Schedule</strong>, <strong>Adding new Tasks and Events
+                to the Schedule</strong>, and <strong>Finding On-Campus Events</strong>. All screens were made in Figma and could be interacted with.
+            </p>
+
+            <div class="flexbox-2x">
+                <div class="img-card">
+                    <h3>Adding new Events (my work)</h3>
+                    <img src="imgs/add_event_hifi.svg">
+                </div>
+
+                 <div class="img-card">
+                    <h3>Viewing the Schedule (partner work)</h3>
+                    <img src="imgs/view_schedule_hifi.svg">
+                </div>
+
+                 <div class="img-card">
+                    <h3>Finding On-Campus Events (partner work)</h3>
+                    <img src="imgs/campus_events_hifi.png">
+                </div>
+            </div>
+
+            <h3>Assessing the Hi-fi Prototypes</h3>
+            <p>
+                To assess the effectiveness of our designs, my group and I conducted task walkthroughs with potential 
+                users of our app. We had a series of pre- and post-task questions, and had 2 tasks for our users to perform. 
+            </p>
+
+            <div class="flexbox-2x">
+                <div class="text-card">
+                    <em>Task 1: Add a new task titled “Final Research Paper” to the schedule</em>
+                    <p>The due date should be 05/03/25 at 11:59pm and it should be color coded as green.</p>
+                </div>
+
+                <div class="text-card">
+                    <em>Task 2: Find and add the campus event called “CAD Commencement”</em>
+                </div>
+            </div>
+
+            <p>
+                I conducted <strong>2 in-person task walkthroughs</strong>, and we tested our prototype with a total of 4 different users.
+            </p>
+
+            <p>Based on the results from our task-walkthroughs, this is what I would change about my screens in a future iteration of the app:</p>
+            <img src="imgs/add_events_corrections.svg">
+        </section>
+
+        <!--Reflections-->
+        <section>
+            <h2>Project Reflections</h2>
+            <p>
+                While the final output of this project was only a prototype, feedback from users suggested that they would use 
+                it if it were a full app. Specifically, users liked being able to find and add on-campus events to their schedule. 
+                The general scheduling features of the app were okay, but users did not think that they provided anything they 
+                couldn't already get with apps like Google Calendar. In the future, I would emphasize features that differentiate 
+                our app from other scheduling apps.
+            </p>
+
+            <p>Overall, this project helped me improve my abilities to:</p>
+            <ul>
+                <li>Perform User Research + Analysis</li>
+                <li>Make User Models</li>
+                <li>Assess + Iterate on Designs</li>
+                <li>Prototype Interactions in Figma</li>
+            </ul>
+        </section>
+
+        <a id="to-top" href="#top-nav">Back to Top</a>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>Nathan McComber - 2025</p>
+
+        <div id="footer-contact">
+            <p>Contact:</p>
+            <a class="nav-img" href="mailto:nathanzmcc@gmail.com">
+                <img class="nav-img" src="imgs/envelope.svg" alt="Email me">
+            </a>
+            <a href="https://www.linkedin.com/in/nathan-mccomber-5818692a3">
+                <img class="nav-img" src="imgs/linkedin_logo.jpg" alt="Hyperlink to my LinkedIn account">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

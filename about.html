@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link Fustat Typeface-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+
+    <!--Link CSS Files-->
+    <link href="styles/styles.css" rel="stylesheet">
+
+    <title>Nathan McComber Portfolio</title>
+
+    <!--Link scripts-->
+    <script src="scripts/hamburger.js"></script>
+</head>
+<body>
+    <!--Nav-->
+    <header>
+        <nav id="top-nav">
+            <a class="nav-text" href="index.html">home</a>
+            <a class="nav-text-current" href="about.html">about</a>
+            <a class="nav-text mobile-hide" href="schedule_app.html">scheduling app</a>
+            <a class="nav-text mobile-hide" href="travel_site.html">travel website</a>
+            <a class="nav-text mobile-hide" href="level_editor.html">game level editor</a>
+            <a class="nav-img" href="mailto:nathanzmcc@gmail.com"><img class="nav-img" src="imgs/envelope.svg" alt="Email me"></a>
+            <a href="https://www.linkedin.com/in/nathan-mccomber-5818692a3"><img class="nav-img" src="imgs/linkedin_logo.jpg" alt="Hyperlink to my LinkedIn account"></a>
+            <button id="hamburger-btn" class="mobile-show" onclick="toggleMenu()">
+                <img id="hamburger-img" src="imgs/hamburger_bars.svg" alt="Hamburger menu button">
+            </button>
+        </nav>
+    </header>
+
+    <!--Hamburger menu, not in header or main-->
+    <div id="hamburger-menu">
+            <a class="nav-text" href="schedule_app.html">scheduling app</a>
+            <a class="nav-text" href="travel_site.html">travel website</a>
+            <a class="nav-text" href="level_editor.html">game level editor</a>
+    </div>
+
+    <main>
+        <h1>About Me</h1>
+
+        <p>
+            I'm a 3rd year UX Design student at the Rochester Institute of Technology. It took me a while to decide on 
+            UX Design as an area of study, but some key things that drew me to UX Design are:
+        </p>
+
+        <ul>
+            <li>I enjoy being <strong>creative</strong></li>
+
+            <li>I want to <strong>help people</strong> and actually affect their lives</li>
+
+            <li>I enjoy working on things that people <strong>interact</strong> with</li>
+        </ul>
+
+        <h2>My Journey to UX Design</h2>
+
+        <p>
+            My love for being creative started when I was around 3 or 4 years old. At that age, LEGOs were my life and 
+            I made original builds with them every day. If there was a toy that I wanted but didn't have, I would build 
+            my own LEGO version of it. Building with LEGOs allowed me to turn ideas into physical objects and helped me 
+            to expand my imaginative capabilities.
+        </p>
+
+        <p>
+            Then, at around the age of 6, I played <span class="italics">The Legend of Zelda: Ocarina of Time</span>.
+            It opened up a whole new world of possibilities to me, and I felt that the game had a living, breathing world 
+            inside of it. The <strong>experience</strong> and <strong>feelings</strong> the game gave me stuck with me, and I 
+            realized that being able to interact with a product could make it much more impactful. 
+        </p>
+
+        <p>
+            From that point forward, I thought that I wanted to get into game development. I took coding classes and 
+            followed YouTube tutorials in an attempt to make my own game. I even went as far as enrolling into the 
+            Game Design and Development program at the Rochester Institute of Technology. However, I soon realized that
+            game development was not what I wanted to do. I wasn't interested in algorithms, physics, or graphics rendering, 
+            I was interested in game mechanics, level design choices, and artistic decisions. Essentially, I was interested 
+            in the aspects of game development that <strong>delivered an experience to the player</strong>.
+        </p>
+
+        <p>
+            I then pivoted to UX Design and strove to learn about how to provide experiences through apps and products.
+        </p>
+
+        <h2>Other Interests</h2>
+
+        <p>
+            When I'm not doing UX Design, I enjoy drawing, writing, reading, and playing the occasional video game. While I haven't 
+            had any formal art education, I love sketching and have taught myself through YouTube videos and How-to-Draw books.
+            Typically, I enjoy drawing creatures and writing up backstories/lore for them. I also do a little 
+            bit of character design and want to push myself by drawing landscapes and architecture. My current art goals are:
+        </p>
+
+        <ul>
+            <li>Learn to draw with a variety of pencil hardnesses</li>
+            <li>Add color to my art with watercolor paints</li>
+            <li>Get comfortable with drawing animals/people in an environment (not just floating in space)</li>
+        </ul>
+
+        <p>
+            I also like writing my own stories and am currently handwriting a small fantasy story in a little notebook. In the future, I hope 
+            to draw scenes from the story or use stop motion animation to bring the tale to life.
+        </p>
+
+        <h2>Interesting Non-UX Work</h2>
+
+        <div class="img-card">
+            <h3>Poster Commemorating Ole Einar Bjørndalen's 4 Gold Medals in the 2002 Winter Olympics (2025)</h3>
+            <img src="imgs/biathlon_poster.png" alt="Poster depicting 4 figures competing in the Biathlon.">
+        </div>
+
+        <div class="img-card">
+            <h3>Semester Recap Video (2023)</h3>
+            <video controls>
+                <source src="videos/semester_recap.mp4">
+            </video>
+        </div>
+
+        <div class="img-card">
+            <h3>Kirby Stop Motion Video (2023)</h3>
+            <video controls>
+                <source src="videos/kirby_stop_motion.mp4">
+            </video>
+        </div>
+
+        <a id="to-top" href="#top-nav">Back to Top</a>
+    </main>
+
+     <!--Footer-->
+    <footer>
+        <p>Nathan McComber - 2025</p>
+
+        <div id="footer-contact">
+            <p>Contact:</p>
+            <a class="nav-img" href="mailto:nathanzmcc@gmail.com">
+                <img class="nav-img" src="imgs/envelope.svg" alt="Email me">
+            </a>
+            <a href="https://www.linkedin.com/in/nathan-mccomber-5818692a3">
+                <img class="nav-img" src="imgs/linkedin_logo.jpg" alt="Hyperlink to my LinkedIn account">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
