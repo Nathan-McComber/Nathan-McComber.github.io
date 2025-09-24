@@ -44,12 +44,16 @@ main {
 
 /* Nav */
 header * {
-    z-index: 99;
+    z-index: 99; /*CHECK*/
 }
 
 header {
     position: relative;
-    z-index: 2;
+    z-index: 2; /*CHECK*/
+
+    display: flex;
+    align-items: baseline;
+    gap: calc(4 * var(--space-scale));
 
     width: 90vw;
     background-color: var(--light-bg);
@@ -68,7 +72,7 @@ header {
 
 nav {
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-self: center;
 
     gap: calc(2 * var(--space-scale));
@@ -76,9 +80,35 @@ nav {
     padding: calc(1 * var(--space-scale)) calc(3 * var(--space-scale));
 }
 
+.nav-name {
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0px;
+
+    margin-left: calc(3 * var(--space-scale));
+    padding-top: 0/*calc(4 * var(--space-scale));*/;
+
+    display: inline;
+}
+
+.nav-name:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/*
+#name-title {
+    font-size: 0.6em;
+    font-weight: bold;
+}
+*/
+
 .nav-img {
     width: calc(4 * var(--space-scale));
     border-radius: 4px;
+
+    margin-bottom: 0px;
 }
 
 .nav-text {
@@ -381,18 +411,23 @@ figure {
     nav {
         display: flex;
         align-items: flex-start;
+        justify-items: center;
+        justify-content: center;
         gap: calc(2 * var(--space-scale));
+        width: 75vw;
 
         justify-self: center;
 
         padding: calc(1 * var(--space-scale)) calc(4 * var(--space-scale));
 
-        margin-bottom: calc(6 * var(--space-scale));
+        margin-top: calc(2 * var(--space-scale));
+        margin-bottom: calc(1 * var(--space-scale));
     }
 
     nav a {
         margin-top: calc(1 * var(--space-scale));
     }
+
 
     .nav-text, .nav-text-current {
         font-size: 1em;
