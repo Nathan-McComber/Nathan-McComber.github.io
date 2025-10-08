@@ -72,8 +72,13 @@ header {
 
 nav {
     display: flex;
-    align-items: right;
+    /*flex-wrap: wrap;*/
+    /*align-items: right;*/
+    align-items: center;
     justify-self: center;
+    justify-content: center;
+
+    width: 90vw;
 
     gap: calc(2 * var(--space-scale));
 
@@ -82,11 +87,11 @@ nav {
 
 .nav-name {
     color: white;
-    font-size: 1.6em;
+    font-size: 1em;
     font-weight: bold;
     margin: 0px;
 
-    margin-left: calc(3 * var(--space-scale));
+    /*margin-left: calc(3 * var(--space-scale));*/
     padding-top: 0/*calc(4 * var(--space-scale));*/;
 
     display: inline;
@@ -162,7 +167,7 @@ nav {
     right: auto;
 
     /* Hide the menu */
-    top: -12vh;
+    top: -16vh;
     z-index: 1;
 
     width: 90vw;
@@ -181,6 +186,10 @@ nav {
 
     /* Transition stuff */
     transition: top 0.5s;
+}
+
+#hamburger-menu a{
+    font-size: 1em;
 }
 
 /* Footer */
@@ -428,6 +437,9 @@ figure {
         margin-top: calc(1 * var(--space-scale));
     }
 
+    .nav-name {
+        font-size: 1.6em;
+    }
 
     .nav-text, .nav-text-current {
         font-size: 1em;
