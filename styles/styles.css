@@ -125,6 +125,7 @@ nav {
 .nav-text-current {
     color: white;
     font-weight: 500;
+    text-decoration: underline;
     font-size: 1.2em;
 }
 
@@ -356,6 +357,14 @@ figure {
     margin-top: calc(4 * var(--space-scale));
 }
 
+/* SUMMARY CARDS - MOBILE / BASE */
+.summary-label {
+    font-weight: bold;
+}
+
+.summary-move-up {
+    margin-top: calc(-1 * var(--space-scale));
+}
 /*
 #to-top {
     display: inline-block;
@@ -490,7 +499,7 @@ figure {
         font-size: 1.5em;
         margin-bottom: calc(2 * var(--space-scale));
     }
-
+    
     /* Layout classes */
     .flexbox-2x {
         display: flex;
@@ -522,5 +531,15 @@ figure {
 
      .user-model {
         max-width: 35vw;
+    }
+
+    /* For images that are too big */
+    .smaller-img {
+        width: 40vw;
+    }
+
+    /* Summary Card */
+    .flexbox-3x .summary-info {
+        max-width: 100%;
     }
 }
