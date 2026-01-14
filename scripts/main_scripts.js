@@ -16,8 +16,8 @@ function createSidebar() {
         <p>A UX Designer with a passion for helping people by solving end-user problems.</p>
 
         <div id="contact-buttons">
-            <a href="google.com"><img src="imgs/darkmode_icons/email_icon.svg" alt="Email Icon"></a>
-            <a href="google.com"><img src="imgs/darkmode_icons/linkedin_icon.svg" alt="LinkedIn Icon"></a>
+            <a href="mailto:nathanzmcc@gmail.com"><img src="imgs/darkmode_icons/email_icon.svg" alt="Email Icon"></a>
+            <a href="www.linkedin.com/in/nathan-mccomber-5818692a3"><img src="imgs/darkmode_icons/linkedin_icon.svg" alt="LinkedIn Icon"></a>
         </div>
 
         <p class="nav-item"><a href="index.html">Home</a></p>
