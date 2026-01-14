@@ -1,0 +1,38 @@
+#home-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 16px;
+}
+
+#home-row a {
+    text-decoration: none;
+}
+
+.home-card h2 {
+    font-size: 1.7rem;
+}
+
+.home-card img {
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.home-card {
+    border-radius: 8px;
+    padding: 16px;
+
+    width: 45%;
+    height: auto;
+
+    margin-bottom: 32px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+    .home-card {
+        width: 100%;
+    }
+}

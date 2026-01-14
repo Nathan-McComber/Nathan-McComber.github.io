@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan McComber Portfolio</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/svg+xml" href="imgs/darkmode_icons/favicon.svg">
+
+    <!--Link Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!--Link Styles-->
+    <link rel="stylesheet" href="styles/base_styles.css">
+    <link rel="stylesheet" href="styles/sidebar_styles.css">
+    <link rel="stylesheet" href="styles/lightbox_styles.css">
+    <link rel="stylesheet" href="styles/gallery_styles.css">
+
+    <!--Link Scripts-->
+    <script defer src="scripts/main_scripts.js">console.log("test");</script>
+</head>
+
+<body>
+    <nav id="sidebar">
+        
+    </nav>
+    
+    <main>
+        <section id="overview">
+            <!--Heading + Image-->
+            <h1>Programming an Informative Travel Website</h1>
+            <img class="hero-img" src="imgs/travel_website/thumbnail.png" alt="The Travel Website being displayed on a laptop">
+
+            <!--Overview Text-->
+            <p>In a full-stack web programming class, I was tasked with designing and developing a travel
+                website. I decided to create a website for the 1000 Islands and aimed to entice users to
+                travel there with both visual and textual content. The project was hand-coded; <em>no libraries,
+                frameworks, or AI were used</em>.</p>
+
+            <!--Goal-->
+            <p class="major-point"><span class="label">Goal: </span>
+                Exercise foundational web programming skills while practicing web design, content writing, and content management.</p>
+            
+            <!--Overview Points-->
+            <div class="row-3">
+                <div>
+                    <p class="label bigger-text">Project Type:</p>
+                    <p class="bigger-text">Class, Individual</p>
+                </div>
+
+                <div>
+                    <p class="label bigger-text">Role:</p>
+                    <p class="bigger-text">Designer, Programmer</p>
+                </div>
+
+                <div>
+                    <p class="label bigger-text">Duration:</p>
+                    <p class="bigger-text">~ 14 hours</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Planning ------------------------------------------------------------------------------->
+        <section>
+            <h2>Planning</h2>
+            <p>Before jumping into writing content and programming, I laid out a plan for the site's 
+                content and design. To plan, I made a <em>site map</em>, <em>content model</em>, and 
+                <em>static mockup</em>.</p>
+
+            <div class="row-2">
+                <div>
+                    <img class="expandable" src="imgs/travel_website/sitemap.png" alt="A sitemap for the travel website with 4 main branches">
+                </div>
+                
+                <div>
+                    <p class="label">Site Map</p>
+                    <p>It helped me determine what pages would be on the site. 
+                        I aimed to <em>highlight exciting things</em> like landmarks, activities, and fun restaurants.</p>
+                </div>
+            </div>
+
+            <div class="row-2">
+                <div>
+                    <img class="expandable" src="imgs/travel_website/content_model.png" alt="A content model for the travel website. It features information for 7 page types.">
+                </div>
+                <div>
+                    <p class="label">Content Model</p>
+                    <p>It allowed me to have an idea of page content <em>without committing to writing</em>. 
+                        It was a helpful guide for when I actually began writing the site's content.</p>
+                </div>
+            </div>
+
+            <div class="row-2">
+                <div>
+                    <img class="expandable" src="imgs/travel_website/mockup.png" alt="A static mockup for the travel website. It shows an example homepage with the title 'Welcome to the 1000 Islands...'">
+                </div>
+                <div>
+                    <p class="label">Content Model</p>
+                    <p>It helped me determine things such as:</p>
+                    <ul>
+                        <li>color usage</li>
+                        <li>typography & type hierarchy</li>
+                        <li>general layout</li>
+                    </ul>
+                    <p>It was a <em>helpful guide when writing CSS</em>.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Front End ------------------------------------------------------------------------------>
+        <section>
+            <h2>Programming the Front-End</h2>
+            <p>The first version of the site was static and made using a combination of <em>HTML</em> and <em>CSS</em>.</p>
+            <p>Unfortunately, the website is hosted on a private university server, so <em>I cannot link to it here</em>.</p>
+
+            <h3>HTML Considerations</h3>
+            <div class="row-3">
+                <div>
+                    <p class="bigger-text">Using semantic tags</p>
+                    <p>This is a good development practice and also <em>enhances accessibility</em>.</p>
+                </div>
+
+                <div>
+                    <p class="bigger-text">Providing alt text for images</p>
+                </div>
+
+                <div>
+                    <p class="bigger-text">Using a consistent &lt;section&gt; and &lt;div&gt; structure</p>
+                </div>
+            </div>
+
+            <h3>CSS Considerations</h3>
+            <div class="row-3">
+                <div>
+                    <p class="bigger-text">Using variables for colors</p>
+                </div>
+
+                <div>
+                    <p class="bigger-text">Using relative units when appropriate</p>
+                </div>
+
+                <div>
+                    <p class="bigger-text">Using multiples of 8 for static units</p>
+                </div>
+            </div>
+
+            <p>I also used media queries to ensure that the website was <em>responsive</em>.</p>
+
+            <div class="row-2">
+                <div>
+                    <h4>Desktop/Wide View</h4>
+                    <img class="expandable" src="imgs/travel_website/desktop_view.png" alt="Desktop view of the site with a title 'Places to Visit' and 4 locations shown">
+                </div>
+
+                <div>
+                    <h4>Mobile/Narrow View</h4>
+                    <img class="expandable" src="imgs/travel_website/mobile_view.png" alt="Mobile view of the site with a title 'Places to Visit' and 1 location shown">
+                </div>
+            </div>
+        </section>
+
+        <!-- Back End -------------------------------------------------------------------------------->
+        <section>
+            <h2>Programming the Back-End</h2>
+            <p>After the static site was complete, I implemented a back-end using <em>PHP</em> and a <em>mySQL Database</em>.</p>
+
+            <h3>Benefits of the Back-End</h3>
+            <div class="row-3">
+                <div>
+                    <p class="bigger-text">Stored site content on a database</p>
+                </div>
+
+                <div>
+                    <p class="bigger-text">Eliminated reused chunks of HTML</p>
+                </div>
+
+                <div>
+                    <p class="bigger-text">Allowed for a user review feature</p>
+                </div>
+            </div>
+
+            <h3>User Review Feature</h3>
+            <p>I created a user review feature to practice submitting and receiving data from a backend.</p>
+
+            <div class="row-2">
+                <div>
+                    <h4>Review Form</h4>
+                    <img class="expandable" src="imgs/travel_website/review_form.png" alt="A form for submitting reviews with input fields such as 'Name' and 'Rating'">
+                </div>
+
+                <div>
+                    <h4>User Reviews</h4>
+                    <img class="expandable" src="imgs/travel_website/user_reviews.png" alt="User reviews submitted to the website for testing purposes">
+                </div>
+            </div>
+        </section>
+
+        <!-- Adding JavaScript -------------------------------------------------------------------------->
+        <section>
+            <h2>Adding Features with JavaScript</h2>
+            <h3>Improving the Gallery</h3>
+            <p>The original gallery showed every image at once and had <em>no focal point</em>. 
+                The new one is more focused and allows users to manually flip through the images.</p>
+
+            <div class="row-2">
+                <div class="centered">
+                    <img class="expandable" src="imgs/travel_website/old_gallery.png" alt="A gallery with 3 images shown at once">
+                    <p class="bigger-text label">Old</p>;
+                </div>
+
+                <div class="centered">
+                    <img class="expandable" src="imgs/travel_website/new_gallery.png" alt="A gallery with 1 large image shown">
+                    <p class="bigger-text label">New</p>;
+                </div>
+            </div>
+
+            <h3>Lightbox Feature</h3> 
+            <p>I also used JavaScript to make a lightbox feature for the gallery. It allows users to see the image at a <em>larger size</em>.</p>
+            <video controls>
+                <source src="videos/travel_website_gallery_lightbox.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- Reflection -------------------------------------------------------------------------------->
+        <section>
+            <h2>Reflection</h2>
+            <p>The website provides visual and textual information about the 1000 Islands in an engaging way.
+                It works well and helped me to <em>develop my web design and development skills</em>.</p>
+            
+            <div class="major-point">
+                <p class="label">Takeaways:</p>
+                <ul>
+                    <li>Plans should include information about implementation (not just design and content).</li>
+                    <li>Final products usually differ from design mockups in small ways.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="next-links">
+            <a href="#overview">Back to Top</a>
+            <a href="level_editor.html">Game Level Editor ></a>
+        </section>
+    </main>
+</body>
+
+</html>

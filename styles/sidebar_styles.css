@@ -1,0 +1,136 @@
+#sidebar {
+    position: fixed;
+
+    background-color: var(--card-color);
+
+    width: 20%;
+    min-width: 250px;
+
+    height: 85vh;
+
+    padding: 24px;
+
+    border-radius: 8px;
+}
+
+#sidebar .name {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 48px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#name-box {
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 16px; 
+}
+
+#name-box button {
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+#open-nav {
+    display: none;
+}
+
+#modeToggle {
+    margin-top: 24px;
+    background-color: transparent;
+    border: none;
+}
+
+#contact-buttons a {
+    margin-right: 8px;
+}
+
+#contact-buttons {
+    margin-bottom: 24px;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.nav-item a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.selected {
+    font-weight: 700;
+    background-color: var(--major-point-bg-color);
+    padding: 8px;
+    margin-left: -8px;
+
+    border-radius: 4px;
+    /*text-decoration: underline;*/
+    /* Maybe change the color? - use 500 instead of 700 then */
+}
+
+
+.selected a {
+    color: var(--major-point-text-color);
+}
+
+
+#secondary-links {
+    /*
+    position: absolute;
+    bottom: 24px;
+    */
+    margin-top: 25vh; /* Do 20 for light/darkmode btn */
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+    #contact-buttons, #sidebar > .nav-item, #secondary-links, #sidebar > p {
+        display: none;
+    }
+
+    #name-box {
+        border: none;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #sidebar .name {
+        font-size: 1.4rem;
+    }
+
+    .nav-item {
+        font-size: 1.2rem;
+        margin-top: 8px;
+    }
+
+    #sidebar {
+        position: static;
+
+        height: 32px;
+        width: 90%;
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+    }
+
+    /*Open Nav Button*/
+     #open-nav {
+        display: block;
+
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #contact-buttons, #sidebar > .nav-item, #secondary-links, #sidebar > p {
+        display: block;
+    }
+}

@@ -3,148 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Link Fustat Typeface-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
-
-    <!--Link Favicon-->
-    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
-
-    <!--Link CSS Files-->
-    <link href="styles/styles.css" rel="stylesheet">
-    <link href="styles/home.css" rel="stylesheet">
-
     <title>Nathan McComber Portfolio</title>
 
-    <!--Link scripts-->
-    <script src="scripts/hamburger.js"></script>
+    <!--Favicon-->
+    <link rel="icon" type="image/svg+xml" href="imgs/darkmode_icons/favicon.svg">
+
+    <!--Link Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!--Link Styles-->
+    <link rel="stylesheet" href="styles/base_styles.css">
+    <link rel="stylesheet" href="styles/sidebar_styles.css">
+    <link rel="stylesheet" href="styles/home_styles.css">
+
+    <!--Link Scripts-->
+    <script defer src="scripts/main_scripts.js"></script>
 </head>
+
 <body>
-    <!--Nav-->
-    <header>
-        <nav id="top-nav">
-            <a class="nav-name" href="index.html">Nathan McComber <!--<span id="name-title">UX Designer</span>--></a>
-            <!--<a class="nav-text-current" href="index.html">home</a>-->
-            <a class="nav-text mobile-hide" href="about.html">about</a>
-            <a class="nav-text mobile-hide" href="schedule_app.html">scheduling app</a>
-            <a class="nav-text mobile-hide" href="travel_site.html">travel website</a>
-            <a class="nav-text mobile-hide" href="level_editor.html">game level editor</a>
-            <a class="nav-img" href="mailto:nathanzmcc@gmail.com"><img class="nav-img" src="imgs/envelope.svg" alt="Email me"></a>
-            <a href="https://www.linkedin.com/in/nathan-mccomber-5818692a3"><img class="nav-img" src="imgs/linkedin_logo.jpg" alt="Hyperlink to my LinkedIn account"></a>
-            <button id="hamburger-btn" class="mobile-show" onclick="toggleMenu()">
-                <img id="hamburger-img" src="imgs/hamburger_bars.svg" alt="Hamburger menu button">
-            </button>
-        </nav>
-    </header>
-
-    <!--Hamburger menu, not in header or main-->
-    <div id="hamburger-menu">
-            <a class="nav-text" href="about.html">about</a>
-            <a class="nav-text" href="schedule_app.html">scheduling app</a>
-            <a class="nav-text" href="travel_site.html">travel website</a>
-            <a class="nav-text" href="level_editor.html">game level editor</a>
-    </div>
-
+    <nav id="sidebar">
+        
+    </nav>
+    
     <main>
-        <h1>Hi, I'm Nathan McComber.</h1>
-        <p>A <strong>UX Design</strong> student with a passion for helping people by solving end user problems.</p>
-
-        <div class="flexbox-2x">
-            <div class="text-card">
-                <h2>UX Skills</h2>
-                <ul>
-                    <li>Interviewing Users</li>
-                    <li>Assessing Survey Data</li>
-                    <li>Making User Models</li>
-                    <li>Sketching/Brainstorming Solutions</li>
-                    <li>Changing Designs based on Feedback</li>
-                    <li>Performing Task Walkthroughs with Users</li>
-                </ul>
-            </div>
-
-            <div class="text-card">
-                <h2>UX Tools</h2>
-
-                <h3>Design</h3>
-                <ul>
-                    <li>Figma</li>
-                    <li>Axure RP</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Photoshop</li>
-                </ul>
-
-                <h3>Research</h3>
-                <ul>
-                    <li>Qualtrics</li>
-                    <li>Jamovi (R frontend)</li>
-                    <li>Minitab</li>
-                </ul>
-            </div>
-        </div>
-
-        <h2>Featured Work</h2>
-
-        <!--Projects-->
-        <div>
-            <a href="schedule_app.html">
-                <div class="project-card">
-                    <img src="imgs/schedule_app_thumb.png" alt="A mobile phone displaying a scheduling app.">
-
-                    <div>
-                        <h3>Helping New College Students Manage their Busy Lives</h3>
-                        <p>2 students and I went through the entire design process, from initial research to high fidelity
-                            prototype, to make an app that helps new college students transition to campus life. I focused on
-                            considering different levels of student motivation and made screens for making and editing schedules.
-                        </p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="travel_site.html">
-                <div class="project-card">
-                    <img src="imgs/travel_site_thumbnail_blurred.JPEG" alt="A laptop displaying a travel website.">
-
-                    <div>
-                        <h3>Programming an Informative Travel Website</h3>
-                        <p>An individual web development project where I had the goal of making a website that entices users 
-                            to travel to the 1000 islands. I got to practice content writing, information architecture, and hand-coding 
-                            in HTML, CSS, JavaScript, and PHP.
-                        </p>
-                    </div>
-                </div>
-            </a>
+        <h1>Case Studies</h1>
+        <div id="home-row">
             
-            <a href="level_editor.html">
-                <div class="project-card">
-                    <img src="imgs/editor_thumbnail.png" alt="A video game level editor.">
-
+            <div class="home-card">
+                <a href="schedule_app.html">
+                <img src="imgs/schedule_app/schedule_app_thumbnail.png" alt="A scheduling app on a mobile phone">
                     <div>
-                        <h3>Redesigning a Video Game Level Editor</h3>
-                        <p>A personal project where I redesigned a level editor that I made for an old game development 
-                            project. It involved heuristic evaluations, feature brainstorming, formative sketching, 
-                            and mockup creation.
+                        <h2>Helping New College Students Manage their Busy Lives</h2>
+                        <p>2 students and I went through the entire design process, from initial research to interactive
+                            prototype. I focused on different levels of student motivation and designed screens for 
+                            making and editing schedules.
                         </p>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
+
+            
+            <div class="home-card">
+                <a href="travel_website.html">
+                <img src="imgs/travel_website/thumbnail.png" alt="A travel website on a laptop screen">
+                <h2>Programming an Informative Travel Website</h2>
+                <p>In a web development class I created a travel website for the 1000 Islands. I got to practice 
+                    content writing, information architecture, web design, and programming with no frameworks or AI.
+                </p>
+                </a>
+            </div>
+            
+
+            
+            <div class="home-card">
+                <a href="level_editor.html">
+                <img src="imgs/level_editor/thumbnail.png" alt="A level editor for a puzzle videogame. A view of the level, item properties, and in-game currency options are shown.">
+                <h2>Redesigning a Video Game Level Editor</h2>
+                <p>A personal project where I redesigned a level editor for an old game development project.
+                    It involved heuristic evaluations, formative brainstorming and sketching, and mockup 
+                    creation. 
+                </p>
+                </a>
+            </div>
+            
         </div>
     </main>
-
-     <!--Footer-->
-    <footer>
-        <p>Nathan McComber - 2025</p>
-
-        <div id="footer-contact">
-            <p>Contact:</p>
-            <a class="nav-img" href="mailto:nathanzmcc@gmail.com">
-                <img class="nav-img" src="imgs/envelope.svg" alt="Email me">
-            </a>
-            <a href="https://www.linkedin.com/in/nathan-mccomber-5818692a3">
-                <img class="nav-img" src="imgs/linkedin_logo.jpg" alt="Hyperlink to my LinkedIn account">
-            </a>
-        </div>
-    </footer>
 </body>
+
 </html>

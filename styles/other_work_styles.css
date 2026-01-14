@@ -1,0 +1,67 @@
+/* OLD
+#bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+
+
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#other-work img {
+    position: absolute;
+    left: 25%;
+
+    width: 50%;
+    max-width: 1000px;
+
+    z-index: 5;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#close-btn {
+    position: fixed;
+    z-index: 2;
+
+    top: 32px;
+    right: 32px;
+
+    background-color: transparent;
+    border: none;
+
+    width: 5%;
+    min-width: 32px;
+}
+
+#close-btn img {
+    width: 100%;
+}
+*/
+
+main img {
+    width: 75%;
+
+    margin-top: 32px;
+}
+
+#next-links {
+ margin-top: 32px;
+}
+
+h2 {
+    font-style: italic;
+    margin-bottom: -16px;
+}
+
+section p {
+    margin-top: 32px;
+    margin-bottom: -16px;
+}
+
+section {
+    border: none;
+    margin-bottom: 50px;
+}

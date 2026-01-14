@@ -1,0 +1,400 @@
+:root {
+    --bg-color: #303030;
+    --card-color: #505050;
+    --text-color: #FFFFFF;
+    --small-text-color: #D0D0D0;
+    --heading-color: #FFFFFF;
+    --major-point-bg-color: #F5F5F5;
+    --major-point-text-color: #505050;
+    --link-color: #6BB2FF;
+    --issue-color: #FFB2B2;
+    --accent-color: #E9FF89;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    background-color: var(--bg-color); 
+    
+    margin: 24px;
+}
+
+main {
+    position:absolute;
+    right: 32px;
+    width: 70%;
+    z-index: -1;
+}
+
+section {
+    margin-bottom: 200px;
+
+    border-bottom: 2px solid var(--text-color);
+    padding-bottom: 40px;
+}
+
+h1 {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 2.7rem;
+
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+h3 {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 1.7rem;
+    font-style: italic;
+
+    margin-top: 50px;
+}
+
+h4 {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+h5 {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+main img {
+    width: 50%;
+    max-width: 1000px;
+    border-radius: 8px;
+}
+
+p {
+    color: var(--text-color);
+    font-weight: 300;
+    line-height: 24px;
+}
+
+ul {
+    margin-top: 0px;
+}
+
+li {
+    color: var(--text-color);
+    font-weight: 300;
+    line-height: 24px;
+}
+
+em {
+    font-style: normal;
+    font-weight: 600;
+
+    color: var(--accent-color);
+}
+
+.statistic {
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-bottom: -4px;
+}
+
+.bigger-text {
+    font-size: 1.2rem;
+    line-height: 34px;
+}
+
+.label {
+    font-weight: 700;
+}
+
+.hero-img {
+    max-width: 1000px;
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+    /*Drop shadow?*/
+}
+
+section p {
+    max-width: 80%;
+}
+
+.major-point {
+    color: var(--major-point-text-color);
+    background-color: var(--major-point-bg-color);
+
+    border-radius: 8px;
+    padding: 16px;
+    
+    font-size: 1.5rem;
+    line-height: 48px;
+}
+
+.major-point p, .major-point li {
+    color: var(--major-point-text-color);
+    line-height: 48px;
+}
+
+.major-point p {
+    margin-top: -4px;
+}
+
+.major-point ul {
+    margin-top: -16px;
+}
+
+.centered img, .centered p{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    text-align: center;
+}
+
+.smaller-text {
+    color: var(--small-text-color);
+    font-size: 0.9rem;
+}
+
+#next-links {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: none;
+    
+    margin-top: -100px;
+    margin-bottom: 24px;
+}
+
+#next-links a {
+    color: var(--text-color);
+
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+video {
+    width: 80%;
+    min-width: 400px;
+}
+
+/* ROW CLASSES --------------------------------------------------------------------------------------*/
+.row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row-3 div {
+    width: 30%;
+    min-width: 200px;
+}
+
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    margin-bottom: 48px;
+}
+
+.row-2 > div, .row-2 > p {
+    width: 45%;
+}
+
+.row-2 img {
+    width: 100%;
+}
+
+.sketch-row {
+    display: flex;
+    gap: 32px;
+
+    margin-bottom: 48px;
+}
+
+.sketch-row > img, .sketch-row > div {
+    width: 30%;
+    object-fit: contain;
+}
+
+.sketch-row > div > img {
+    width: 100%;
+}
+
+.sketch-row p {
+    width: 70%;
+}
+
+.label-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label-row > img {
+    width: 65%;
+    object-fit: contain;
+}
+
+.label-row > div {
+    margin-top: 82px;
+    margin-left: 32px;
+    width: 30%;
+}
+
+.label-row div p {
+    background-color: var(--card-color);
+    padding: 16px;
+    margin: -12px;
+    border-radius: 8px;
+}
+
+/* CARDS -----------------------------------------------------------------------------------------------------*/
+.card {
+    background-color: var(--card-color);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/* SPECIFIC STUFF ----------------------------------------------------------------------------------------*/
+.profile-heading {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.profile-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.open-gallery {
+    color: var(--link-color);
+}
+
+.issue {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--issue-color);
+}
+
+
+/* RESPONSIVE / MEDIA QUERIES ------------------------------------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+    main {
+        width: 60%;
+    }
+
+    section p {
+        width: 90%; 
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 50%;
+    }
+
+    .bigger-text {
+        font-size: 1.1rem;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .major-point {
+        font-size: 1.3rem;
+        line-height: 32px;
+    }
+
+    section {
+        margin-bottom: 100px;
+    }
+
+    #next-links {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    #next-links a {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        display: block;
+        width: 90%;
+    }
+
+    section {
+        margin-left: 32px;
+        padding-bottom: 16px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    section p {
+        width: 100%;
+    }
+
+    .row-3 {
+        display: block;
+    }
+
+    .row-3 div {
+        width: 90%;
+        margin-bottom: 32px;
+    }
+
+    .sketch-row {
+        display: block;
+    }
+    
+    .sketch-row > img, .sketch-row > div {
+        width: 75%;
+    }
+
+    main img {
+        width: 75%;
+    }
+
+    .row-2 {
+        display: block;
+    }
+
+    .row-2 div {
+        width: 100%;
+    }
+
+    .label-row {
+        display: block;
+    }
+
+    .label-row > img, .label-row > div {
+        width: 100%;
+    }
+
+    .label-row div {
+        margin-top: 0px;
+        margin-left: 8px;
+    }
+}
+/*Todo:
+- X fix headings/type hierarchy 
+- tweak spacings
+- X? responsive design
+- X? accent color (use for highlights + use instead of underline on nav)
