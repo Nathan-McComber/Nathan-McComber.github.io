@@ -13,7 +13,7 @@ function createSidebar() {
             <button id="open-nav" onclick="toggleMenu()"><img src="imgs/darkmode_icons/white_bars.svg" alt="Open menu button"></button>
         </div>
 
-        <p>A UX Designer with a passion for helping people by solving end-user problems.</p>
+        <p>A UX Designer looking to help people by solving end-user problems.</p>
 
         <div id="contact-buttons">
             <a href="mailto:nathanzmcc@gmail.com"><img src="imgs/darkmode_icons/email_icon.svg" alt="Email Icon"></a>
