@@ -42,6 +42,10 @@
     border: none;
 }
 
+.gallery-btn:hover {
+    cursor: pointer;
+}
+
 .gallery-btn img {
     width: 100%;
 }
